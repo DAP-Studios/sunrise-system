@@ -3,6 +3,31 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Settings } from 'lucide-react';
 import HeroImage from '../assets/images/hero.png';
 
+// Add animation styles for depth effect
+const animationStyles = `
+  @keyframes deepMove1 {
+    0% { transform: translateY(-150%); }
+    100% { transform: translateY(150%); }
+  }
+  @keyframes deepMove2 {
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(250%); }
+  }
+  @keyframes deepMove3 {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+  }
+  .hero-depth-layer {
+    animation: deepMove1 25s linear infinite;
+  }
+  .hero-depth-layer-2 {
+    animation: deepMove2 35s linear infinite;
+  }
+  .hero-depth-layer-3 {
+    animation: deepMove3 30s linear infinite;
+  }
+`;
+
 const Hero: React.FC = () => {
   const headlineVariants = {
     hidden: { opacity: 0, y: 24 },
@@ -20,6 +45,15 @@ const Hero: React.FC = () => {
       
       {/* Background Image: Industrial Process */}
       <div className="absolute inset-0 z-0">
+        <style>{animationStyles}</style>
+        
+        {/* Animated depth layers - deep moving effect */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="hero-depth-layer absolute inset-0 bg-gradient-to-b from-orange-500/5 to-transparent"></div>
+          <div className="hero-depth-layer-2 absolute inset-0 bg-gradient-to-t from-cyan-400/5 to-transparent"></div>
+          <div className="hero-depth-layer-3 absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-purple-500/5"></div>
+        </div>
+        
         <motion.div 
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}

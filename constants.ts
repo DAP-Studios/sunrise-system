@@ -21,11 +21,15 @@ import HmiImage from './assets/products/hmi.png';
 import SensorImage from './assets/products/sensor.png';
 import ServoImage from './assets/products/servo.png';
 import SmpsImage from './assets/products/smps.png';
+import FlowMeterImage from './assets/projects/thermalmeter.png';
+import WaterAnalyserImage from './assets/projects/wateranalyzer.png';
+import WeighingScaleImage from './assets/projects/waight.png';
+import FlpEnclosureImage from './assets/projects/flp.png';
 
 export const NAV_ITEMS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
+  { label: 'Services', href: '#services'},
   { label: 'Products', href: '#products' },
   { label: 'Projects', href: '#projects' },
   { label: 'IoT', href: '#iot' },
@@ -103,25 +107,25 @@ export const PRODUCTS: ProductItem[] = [
     name: 'Thermal Mass Flow Meter',
     description: 'Measurement of mass/volume flow of gas/air. No temperature/pressure compensation needed.',
     specs: ['Range: 0.5Nm/s ~ 100 Nm/s', 'No moving parts', 'Modular PCB'],
-    image: VfdImage
+    image: FlowMeterImage
   },
   {
     name: 'Water Quality Analysers',
     description: 'PH/ORP, DO, Turbidity, Chlorine, and EC/TDS Analysers with RS485 and 4-20mA output.',
     specs: ['RS485 Output', 'Thread Connection', 'Real-time Monitoring'],
-    image: HmiImage
+    image: WaterAnalyserImage
   },
   {
     name: 'Tank Weighing & Platform Balance',
     description: 'Tank weighing systems and platform balance solutions for process industries.',
     specs: ['High Accuracy', 'Robust Load Cells', 'Process Integration'],
-    image: SensorImage
+    image: WeighingScaleImage
   },
   {
     name: 'FLP Enclosures & Level Switches',
     description: 'All types of Flame Proof (FLP) enclosures and RF Admittance/Tuning Fork/Rotary Paddle switches.',
     specs: ['Hazardous Areas', 'Liquid/Powder', 'Thread/Flange Mount'],
-    image: ServoImage
+    image: FlpEnclosureImage
   }
 ];
 

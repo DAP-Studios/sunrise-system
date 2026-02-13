@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Linkedin } from 'lucide-react';
+import DapLogo from '../assets/images/dap.png';
 
 const Footer: React.FC = () => {
   return (
@@ -47,25 +48,58 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Column 4: Newsletter */}
-            <div>
+            {/* <div>
                 <h3 className="text-white font-bold uppercase tracking-widest text-sm mb-6">Newsletter</h3>
                 <p className="text-slate-400 text-sm mb-4">Subscribe for industrial updates.</p>
                 <form className="flex flex-col gap-2">
                     <input type="email" placeholder="Your Email" className="bg-slate-800 border border-slate-700 px-4 py-3 text-sm focus:border-primary outline-none rounded-sm" />
                     <button className="bg-primary text-white font-bold uppercase text-xs py-3 hover:bg-white hover:text-slate-900 transition-colors rounded-sm">Subscribe</button>
                 </form>
-            </div>
+            </div> */}
 
         </div>
       </div>
       
       {/* Copyright */}
       <div className="bg-slate-950 py-6 border-t border-slate-800">
-        <div className="container mx-auto px-4 sm:px-6 text-center text-xs text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>&copy; {new Date().getFullYear()} Sunrise System. All Rights Reserved.</p>
-            <p className="hidden md:block">Designed for Industrial Excellence</p>
+        <div className="container mx-auto px-4 sm:px-6 text-slate-500 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p className="text-sm sm:text-base">&copy; {new Date().getFullYear()} Sunrise System. All Rights Reserved.</p>
+            
+            {/* DAP Tech Credit with Logo */}
+            <div className="flex items-center gap-3 sm:gap-4">
+              <img
+                src={DapLogo}
+                alt="DAP Tech"
+                className="h-10 sm:h-12 w-auto opacity-90 flex-shrink-0"
+              />
+              <div className="flex flex-col gap-1">
+                <p className="text-sm sm:text-base text-slate-100">
+                  Website by{" "}
+                  <a 
+                    href="https://thedap.live"
+                    className="font-bold hover:underline transition-colors"
+                    style={{ color: '#4169E1' }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    DAP Tech Solutions
+                  </a>
+                </p>
+                <p className="text-xs sm:text-sm text-slate-400">
+                  Deep Parmar{" "}
+                  <a
+                    href="tel:+919725362234"
+                    className="font-bold hover:underline transition-colors"
+                    style={{ color: '#8b2e00' }}
+                  >
+                    +91 9725362234
+                  </a>
+                </p>
+              </div>
+            </div>
         </div>
       </div>
+
     </footer>
   );
 };
