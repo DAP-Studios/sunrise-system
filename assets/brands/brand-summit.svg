@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-label="Summit Dynamics logo">
+  <rect width="240" height="80" rx="12" fill="#0A1220"/>
+  <path d="M22 52 L42 28 L62 52" fill="none" stroke="#60A5FA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="150" y="46" font-family="Oswald, Arial, sans-serif" font-size="26" text-anchor="middle" fill="#DBEAFE" letter-spacing="2">SUMMIT</text>
+  <text x="150" y="64" font-family="Inter, Arial, sans-serif" font-size="10" text-anchor="middle" fill="#93C5FD" letter-spacing="2">DYNAMICS</text>
+</svg>
