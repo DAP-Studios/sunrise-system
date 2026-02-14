@@ -13,8 +13,12 @@ const Footer: React.FC = () => {
                 <h3 className="text-white font-bold uppercase tracking-widest text-lg mb-6 flex items-center gap-2">
                     <span className="w-8 h-1 bg-primary"></span> Sunrise System
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                    A premier turnkey solution-provider in Electrical, Control, Automation and Instrumentation. We deliver the best services using products from leading manufacturers.
+                <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                    Leading industrial automation company in Vapi, Gujarat. Turnkey PLC, SCADA, DCS solutions, panel manufacturing, and instrumentation services for industries across Vapi GIDC, Silvassa, and Daman.
+                </p>
+                <p className="text-slate-400 text-xs leading-relaxed mb-6">
+                    📍 27, Pramukh Commercial Complex, Nr. Cine Park, Vapi Silvassa Road, Vapi - 396195, Gujarat<br/>
+                    📞 +91 97129 58901 | ✉️ sunrisesys.service@gmail.com
                 </p>
                 <div className="flex gap-4">
                     <a href="#" className="w-8 h-8 flex items-center justify-center bg-slate-800 hover:bg-primary text-white transition-colors rounded-sm"><Facebook size={16} /></a>

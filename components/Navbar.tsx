@@ -128,7 +128,7 @@ const Navbar: React.FC = () => {
                 </svg>
               </div>
               <span className="font-display font-bold text-slate-800 text-lg tracking-tight">
-                SUNRISE
+                SUNRISE SYSTEM
               </span>
             </div>
           </div>

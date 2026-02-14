@@ -148,29 +148,29 @@ const Hero: React.FC = () => {
             <motion.h1 
               initial="hidden"
               animate="visible"
-              custom={0.25}
+              custom={0.3}
               variants={headlineVariants}
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight mb-8 text-center md:text-left"
+              className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-[1.15] mb-6 text-center md:text-left"
             >
-                AUTOMATION &bull; ELECTRICAL <br/>
-                <span className="text-primary">INSTRUMENTATION</span>
+                <span className="text-white drop-shadow-2xl">Premier Industrial</span><br/>
+                <span className="text-primary drop-shadow-2xl">Automation Solutions</span><br/>
+                <span className="text-white drop-shadow-2xl text-2xl sm:text-3xl md:text-4xl font-normal opacity-90">in Vapi, Gujarat</span>
             </motion.h1>
-
-            <motion.p 
-              initial="hidden"
-              animate="visible"
-              custom={0.4}
-              variants={headlineVariants}
-                className="text-base sm:text-lg text-slate-300 mb-10 max-w-2xl font-light leading-relaxed text-center md:text-left"
-            >
-                Sunrise System delivers comprehensive turnkey solutions for industrial control, panel assembly, and field automation. 
-                We engineer efficiency from design to commissioning.
-            </motion.p>
             
-            <motion.div 
+            <motion.p
               initial="hidden"
               animate="visible"
-              custom={0.55}
+              custom={0.5}
+              variants={headlineVariants}
+              className="text-slate-300 text-base sm:text-lg md:text-xl mb-10 max-w-2xl leading-relaxed text-center md:text-left"
+            >
+                Turnkey PLC, SCADA & DCS Solutions | Panel Manufacturing | Instrumentation & Control Systems | Serving Vapi GIDC, Silvassa, Daman & South Gujarat Industries
+            </motion.p>
+
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              custom={0.7}
               variants={headlineVariants}
                 className="flex flex-col sm:flex-row gap-4 items-center sm:items-start"
             >

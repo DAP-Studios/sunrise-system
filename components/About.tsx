@@ -83,10 +83,10 @@ const About: React.FC = () => {
                     Automation & <span className="text-primary">Electrical</span> Solution Provider
                  </h2>
                  <p className="text-slate-500 mb-6 leading-relaxed">
-                    We established in Vapi with a new identity as Sunrise System. We are a rapidly expanding and highly dynamic team of young talented Engineers led by a team of professionals.
+                    Established in Vapi, Gujarat, Sunrise System is a rapidly expanding and highly dynamic team of talented engineers serving Vapi GIDC, Silvassa, Daman, and industrial hubs across South Gujarat.
                  </p>
                  <p className="text-slate-500 mb-8 leading-relaxed">
-                    Sunrise System is a premier turnkey solution-provider in Electrical, Control, Automation and Instrumentation. We deliver the best services and support in the industry by using products and services from the leading manufacturers in the world.
+                    As Vapi's premier turnkey solution provider in industrial automation, electrical control systems, and instrumentation, we deliver world-class PLC programming, SCADA systems, panel manufacturing (MCC/PCC), and DCS solutions using products from Siemens, Schneider Electric, ABB, Rockwell, and GE Fanuc.
                  </p>
 
                  {/* Stats Row */}
