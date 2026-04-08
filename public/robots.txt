@@ -1,9 +1,25 @@
-# robots.txt for sunrisesystem.co.in
+# Sunrise System - Robots.txt for SEO
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
 
-# Sitemaps
+# Sitemap location
 Sitemap: https://sunrisesystem.co.in/sitemap.xml
 
-# Crawl-delay for polite crawling
+# Crawl delay
 Crawl-delay: 1
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: AhrefsBot
+Crawl-delay: 2
+
+User-agent: SemrushBot
+Crawl-delay: 2
